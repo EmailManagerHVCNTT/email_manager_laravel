@@ -13,4 +13,8 @@ class Campaign extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    public function mails(){
+    	return $this->belongsToMany('App\Mail');
+    }
 }
